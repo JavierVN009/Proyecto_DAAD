@@ -29,7 +29,7 @@
 <a href = "https://www.youtube.com/watch?v=JB0kIqT1BEk" target = "_blank">https://www.youtube.com/watch?v=JB0kIqT1BEk</a>
 <p>Una vez que instalamos estas librerias, seguimos los siguientes pasos generales</p> 
 <p>(para una explicación más a fondo, recomiendo entrar al directorio</p> 
-<a href = "https://github.com/JavierVN009/Proyecto_DAAD/blob/main/file/Proyecto%20-%20Parte%203.pdf" target = "_blank">file archivo 'Proyecto Parte 3.pdf'</a> 
+<a href = "https://github.com/JavierVN009/Proyecto_DAAD/blob/main/file/Proyecto%20-%20Parte%203.pdf" target = "_blank">file archivo 'Proyecto Parte 3.pdf' página 9</a> 
 <p>que contiene pasos más desglosados de como correr el programa, esta es una explicación más general)</p>
 <ol>
   <li>Descarga el repositorio como ZIP (o clonarlo)</li>
@@ -38,7 +38,7 @@
   <li>Ejecutar en su interprete de Python el archivo de python "Main.py"</li>
   <li>Seguir las instrucciones del Programa tras ejecutarlo</li>
 </ol>
-<p>Correr la implementación en google Colab o en Jupyter es un poco más complicado, la explicación de como hacerlo utilizando estas herramientas también se encuentra en <a href = "https://github.com/JavierVN009/Proyecto_DAAD/blob/main/file/Proyecto%20-%20Parte%203.pdf" target = "_blank">file archivo 'Proyecto Parte 3.pdf'</a> </p>
+<p>Correr la implementación en google Colab o en Jupyter es un poco más complicado, la explicación de como hacerlo utilizando estas herramientas también se encuentra en <a href = "https://github.com/JavierVN009/Proyecto_DAAD/blob/main/file/Proyecto%20-%20Parte%203.pdf" target = "_blank">file archivo 'Proyecto Parte 3.pdf' página 9</a> </p>
 <h3>Clases involucradas</h3>
 <p>Aunque en el programa solo observes a la clase Main en accion, ciertamente hay muchas más involucradas, y son estas:</p>
 <ul>
