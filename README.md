@@ -1,5 +1,13 @@
 # Proyecto_DAAD
 
+<h2>
+  <ul>
+    <li>VALDES NAVA JAVIER</li>
+    <li>TRUJANO ORTÍZ LUÍS ANTONIO</li>
+    <li>IVAN URIEL ROSARIO MARGARITO</li>
+  </ul>
+</h2>
+
 <p>Esta aplicación tiene 2 usos: </p>
 <ol>
   <li>Como PyGame (PARA RECABAR DATOS Y ANALIZARLOS)</li>
@@ -9,7 +17,7 @@
 <h3>INSTRUCCIONES PARA CORRER EL PROGRAMA</h3>
 
 <p>Primero descarga una versión de Python 3 en el siguiente enlace: </p>
-<a href = "https://www.python.org/downloads/"> https://www.python.org/downloads/ </a>
+<a href = "https://www.python.org/downloads/" target = "_blank"> https://www.python.org/downloads/ </a>
 <p>Una vez instalado, debes instalar las librerias de Python</p>
 <ul>
   <li>Numpy</li>
@@ -18,10 +26,10 @@
   <li>plotly</li>
 </ul>
 <p>Recomiendo este video para ver como se realiza la instalación (sirve para cualquier sistema operativo)</p>
-<a href = "https://www.youtube.com/watch?v=JB0kIqT1BEk">https://www.youtube.com/watch?v=JB0kIqT1BEk</a>
+<a href = "https://www.youtube.com/watch?v=JB0kIqT1BEk" target = "_blank">https://www.youtube.com/watch?v=JB0kIqT1BEk</a>
 <p>Una vez que instalamos estas librerias, seguimos los siguientes pasos generales</p> 
 <p>(para una explicación más a fondo, recomiendo entrar al directorio</p> 
-<a href = "https://github.com/JavierVN009/Proyecto_DAAD/tree/main/file">file</a> 
+<a href = "https://github.com/JavierVN009/Proyecto_DAAD/tree/main/file" target = "_blank">file</a> 
 <p>que contiene pasos más desglosados de como correr el programa, esta es una explicación más general)</p>
 <ol>
   <li>Descarga el repositorio como ZIP (o clonarlo)</li>
@@ -30,7 +38,7 @@
   <li>Ejecutar en su interprete de Python el archivo de python "Main.py"</li>
   <li>Seguir las instrucciones del Programa tras ejecutarlo</li>
 </ol>
-<p>Correr la implementación en google Colab o en Jupyter es un poco más complicado, la explicación de como hacerlo utilizando estas herramientas también se encuentra en <a href = "https://github.com/JavierVN009/Proyecto_DAAD/tree/main/file">file</a> </p>
+<p>Correr la implementación en google Colab o en Jupyter es un poco más complicado, la explicación de como hacerlo utilizando estas herramientas también se encuentra en <a href = "https://github.com/JavierVN009/Proyecto_DAAD/tree/main/file" target = "_blank">file</a> </p>
 <h3>Clases involucradas</h3>
 <p>Aunque en el programa solo observes a la clase Main en accion, ciertamente hay muchas más involucradas, y son estas:</p>
 <ul>
