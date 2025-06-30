@@ -31,6 +31,7 @@
 <p>(para una explicación más a fondo, recomiendo entrar al directorio</p> 
 <a href = "https://github.com/JavierVN009/Proyecto_DAAD/blob/main/file/Proyecto%20-%20Parte%203.pdf" target = "_blank">file archivo 'Proyecto Parte 3.pdf' página 9</a> 
 <p>que contiene pasos más desglosados de como correr el programa, esta es una explicación más general)</p>
+<h4>P A S O S</h4>
 <ol>
   <li>Descarga el repositorio como ZIP (o clonarlo)</li>
   <li>Descomprimirlo en caso de haberlo descargado como ZIP</li>
@@ -42,11 +43,11 @@
 <h3>Clases involucradas</h3>
 <p>Aunque en el programa solo observes a la clase Main en accion, ciertamente hay muchas más involucradas, y son estas:</p>
 <ul>
-  <li>Ajedrez: Una clase abstracta que Simula un tablero de Ajedrez, tiene 3 atributos y 8 métodos</li>
-  <li>Raton (hereda de Ajedrez): Una clase que simula una de las fichas que dennotan el Ratón, tiene los atributos y metodos heredados de Ajedrez, y un metodo extra.</li>
-  <li>Gato (Hereda de Ajedrez): Una clase que simula una de las fichas que dennota el Gato, tiene los atributos y métodos heredados de Ajedrez, y 4 metodos extra.</li>
-  <li>GatoCPU (Hereda de Gato): Una clase que simula una de las fichas que dennota un Gato que es controlado por la computadora, tiene los atributos y métodos heredados de la clase Gato, y ademas la implementación de un método abstracto para que se mueva por el tablero de Ajedrez.</li>
-  <li>GatoNOCPU (Hereda de Gato): Una clase que simula una de las fichas que dennota un Gato que es controlado por otro jugador, tiene los atributos y métodos heredados de la clase Gato, y ademas la implementación de un método abstracto para que se mueva por el tablero de Ajedrez.</li>
+  <li><b>Ajedrez</b>: Una clase abstracta que Simula un tablero de Ajedrez, tiene 3 atributos y 8 métodos</li>
+  <li><b>Raton (hereda de Ajedrez)</b>: Una clase que simula una de las fichas que dennotan el Ratón, tiene los atributos y metodos heredados de Ajedrez, y un metodo extra.</li>
+  <li><b>Gato (Hereda de Ajedrez)</b>: Una clase que simula una de las fichas que dennota el Gato, tiene los atributos y métodos heredados de Ajedrez, y 4 metodos extra.</li>
+  <li><b>GatoCPU (Hereda de Gato)</b>: Una clase que simula una de las fichas que dennota un Gato que es controlado por la computadora, tiene los atributos y métodos heredados de la clase Gato, y ademas la implementación de un método abstracto para que se mueva por el tablero de Ajedrez.</li>
+  <li><b>GatoNOCPU (Hereda de Gato)</b>: Una clase que simula una de las fichas que dennota un Gato que es controlado por otro jugador, tiene los atributos y métodos heredados de la clase Gato, y ademas la implementación de un método abstracto para que se mueva por el tablero de Ajedrez.</li>
 </ul>
 <p>Dentro de la clase MAIN simplemente se importan a los GatosCPU, el no CPU y el Raton. El Gato y el Ajedrez se mandan a llamar dentro de los archivos de esas clases; se importan como paquetes.</p>
 <h3>¿Cómo se hace el Analisis?</h3>
