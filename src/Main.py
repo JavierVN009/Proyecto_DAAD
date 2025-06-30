@@ -1,7 +1,5 @@
-# <--!! Solo para dejarlo aclarado, hasta abajo dejé el main como tal, pero hasta arriba hay MUCHISIMOS métodos auxiliares que hice para no tener que estar Copiando y // pegando y copiando y pegando y copiando.... Se entiende vaya; intenté hacer el código lo más chiquito posible, y aún con eso, el codigo se terminó volviendo de 700 // lineas (del puro Main)  --!!>
+# <--!! Solo para dejarlo aclarado, hasta abajo dejé el main como tal, pero hasta arriba hay MUCHISIMOS métodos auxiliares que hice para no tener que estar Copiando y // pegando y copiando y pegando y copiando.... Se entiende vaya; intenté hacer el código lo más chiquito posible, y aún con eso, el codigo se terminó volviendo de 751 // lineas (del puro Main)  --!!>
 
-from Tablero.Ajedrez import Ajedrez
-from Fichas.Gato import Gato
 from Fichas.Raton import Raton
 from Fichas.GatoNOCPU import GatoNOCPU
 from Fichas.GatoCPU import GatoCPU
@@ -84,17 +82,9 @@ def enviaMensaje(num : int):
 	#// En este momento hay 5 mensajes.	
 	mensajes = ["\n    No haremos nada por esta ocasion, puedes volver a correr el programa cuando gustes    \n", "!!!G A N A S T E!!!", "perdiste D:", "\nEs momento de decir adios!!! :\'c\n", "\n  hasta los mejores juegos tienen un limite para sus torneos (por supuesto mucho mas grande que mi limite, pero lo tienen). En este caso; este es el limite, introduce una menor cantidad de jugadores para poder iniciar un torneo  \n"];
 	print(mensajes[num]);
-#}
-
-#public class Main
 
 
-#public static void main(String[] chimalhuacan)
-#{
-#		// ## Preparamos el terreno para recibir las instrucciones directamente de la linea de comandos
-		
-#		// ## Declaramos todos los atributos que vamos a estar necesitando 
-#		Scanner entrada = new Scanner(System.in);
+# MAIN
 veces = 0
 chimalhuacan = []
 
@@ -122,45 +112,41 @@ if(len(chimalhuacan) == 3):
 elif(len(chimalhuacan) == 0):  #// AQUI VOY A HACER EL ANALISIS DE DATOS		
 	try:
 		i = 0
-		probas = []
+		probaG = []
+		probaP = []
+		movs = []
 		original = pd.read_csv("puntajes.csv", usecols = ["Casillas", "Turnos", "Resultado"])
 		agrupados = original.groupby("Casillas")
 		resultados = agrupados["Resultado"]
-		print("resumen")
 		for nombres, series in resultados:
 			ganados = 0
 			perdidos = 0
 			arr = []
-			print(f"\nGrupo: {nombres}")
 			for valor in series:
 				if(valor == "GANADOR"):
 					ganados += 1
 				if(valor == "PERDEDOR"):
 					perdidos += 1
-			print(f"con estos movimientos gano: {ganados}")
-			print(f"con estos movimientos perdio: {perdidos}")
-			arr.append(round(ganados/len(original)*100, 4))
-			arr.append(round(perdidos/len(original)*100, 4))
-			probas.append(arr)
-			i += 1
-		mostrar = original.drop_duplicates(subset=['Casillas'])
-		mostrar.reset_index()
-		mostrar['probabilidad de ganar(%)'] = np.zeros(len(mostrar))
-		mostrar['probabilidad de perder(%)'] = np.zeros(len(mostrar))
-		for j in range(len(mostrar)):
-			mostrar['probabilidad de ganar(%)'][j] = probas[j][0]
-			mostrar['probabilidad de perder(%)'][j] = probas[j][1]
-		#for proba in probas:
-		#	print(proba)
+			probaG.append(round((ganados/len(original))*100, 4))
+			probaP.append(round(perdidos/len(original)*100, 4))
+			movs.append(nombres)
+		setsitos = ["S" + str(i + 1) for i in range(len(movs))]
+		mostrar = pd.DataFrame({"Set":setsitos, "Casillas":movs, "Probabilidad de ganar(%)":probaG, "Probabilidad de perder(%)":probaP})
+		print("\nR E S U M E N")
 		print(mostrar.to_string())
-		fig, axes = plt.subplots(len(mostrar),1, figsize = (5, 3), dpi = 150)
-		for k in range(len(mostrar)):
-			aux = pd.DataFrame({"ganar" : [probas[k][0]], "perder" : [probas[k][1]]})
-			print(aux)
-			axes[k] = aux.plot.bar()
-			axes[k].set_ylabel("Probabilidad")
-		
+		print(" ")
+		fig, axes = plt.subplots(2, 1, figsize = (5, 3), dpi = 150)
+		axes[0] = mostrar.plot.bar(x = "Set", y = "Probabilidad de ganar(%)", rot = 45, figsize = (10, 7))
+		axes[0].set_ylabel("Porcentaje de exito")
+		axes[0].set_title("Probabilidades de ganar por set de movimientos")
+		axes[1] = mostrar.plot.bar(x = "Set", y = "Probabilidad de perder(%)", rot = 45, figsize = (10, 7))
+		axes[1].set_ylabel("Porcentaje de fracasos")
+		axes[1].set_title("Probabilidades de perder por set de movimientos")
+		#fig.
+		fig.add_axes = axes[0]
+		fig.add_axes = axes[1]
 		plt.show()
+		print("")
 		
 	except FileNotFoundError: 
 		print("No hay ningun registro guardado")
@@ -762,4 +748,4 @@ elif(len(chimalhuacan) == 2): #// Toca jugar PVP usuario contra usuario, carnal 
   
 #// Este es el fin del Main
 
-print("todo bien")
+print("Todo bien :D")
