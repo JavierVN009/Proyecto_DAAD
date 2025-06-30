@@ -51,6 +51,6 @@
 </ul>
 <p>Dentro de la clase MAIN simplemente se importan a los GatosCPU, el no CPU y el Raton. El Gato y el Ajedrez se mandan a llamar dentro de los archivos de esas clases; se importan como paquetes.</p>
 <h3>¿Cómo se hace el Analisis?</h3>
-<p>El analisis es de hecho bastante simple, leemos un CSV en el Python, lo convertimos a DataFrame, calculamos probabilidades y las proyectamos como una tabla de resultados y dos gráficos de barras. No hay mucha ciencia realmente</p>
+<p>El analisis es de hecho bastante simple, leemos un CSV en el Python, lo convertimos a DataFrame, calculamos probabilidades y las proyectamos como una tabla de resultados y dos gráficos de barras. No hay mucha ciencia realmente, a lo mucho ajustar un modelo lineal para la columna de Turnos que muestra el programa para predecir en cuantos turnos podrá acabar la siguiente partida.</p>
 <h3>CONCLUSIÓN</h3>
 <p>Tras 6 meses de trabajo en este proyecto, concluimos que será necesario hacer más ensayos y jugar muchas más partidas para poder determinar una estrategia ganadora o por lo menos un conjunto de jugadas que sean más probables de conducir a una victoria, con posibilidad de extender el proyecto para incluso hacer sugerencias a un ratón estándo en una cierta posición incluyendo las casillas de los gatos o su posición actual.</p>
